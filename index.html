@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- ============================================================
+       ÉTAPE 1 : titre et description (Google, onglet, aperçu de partage).
+       ============================================================ -->
+  <title>SWTCH - Trading algorithmique</title>
+  <meta name="description" content="SWTCH, un robot de trading automatisé : ce qu'il fait, ce qu'il a donné, et comment le vérifier sur Myfxbook.">
+  <meta name="theme-color" content="#07161C">
+
+  <meta property="og:title" content="SWTCH - Trading algorithmique">
+  <meta property="og:description" content="Un robot de trading, marche après marche. Résultats vérifiés sur Myfxbook.">
+  <meta property="og:type" content="website">
+
+  <!-- Icône d'onglet : une flamme de bougie, intégrée directement -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2307161C'/%3E%3Cpath d='M16 4c1 4 7 8 7 14a7 7 0 0 1-14 0c0-3 2-5 3-7 .5 2 1.5 3 2.2 3.4C14.800 11 15 8 16 4z' fill='%23F2B544'/%3E%3C/svg%3E">
+
+  <!-- Polices Google (sinon, le site bascule sur des polices système) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- L'image de fond de l'en-tête est chargée en priorité -->
+  <link rel="preload" as="image" href="images/fond-hero.webp">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <a class="skip" href="#contenu">Aller au contenu</a>
+
+  <!-- ===================== EN-TÊTE ===================== -->
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#">
+        <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
+          <path d="M16 3c1 4.500 8 8.500 8 15a8 8 0 0 1-16 0c0-3.200 2-5.400 3.200-7.600.6 2.200 1.700 3.400 2.500 3.800C14 11.500 15 8 16 3z" fill="currentColor"/>
+        </svg>
+        <span>SWTCH</span>
+      </a>
+      <nav class="nav" aria-label="Navigation principale">
+        <a href="#projet">Le projet</a>
+        <a href="#fonctionnement">Fonctionnement</a>
+        <a href="#resultats">Résultats</a>
+        <a class="nav-cta" href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenu">
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero">
+      <div class="wrap hero-text">
+        <p class="tagline">Stairway to Candles Heaven</p>
+        <h1 class="wordmark" aria-label="SWTCH Bot">
+          <span class="wordmark-letters">SWTCH</span>
+          <span class="wordmark-bot">BOT</span>
+        </h1>
+        <!-- À MODIFIER : la phrase sous le titre -->
+        <p class="lead">
+          Un robot de trading que je construis marche après marche.
+          Cette page montre ce qu'il fait, ce qu'il a donné, et comment le vérifier.
+        </p>
+        <div class="actions">
+          <a class="btn btn-primary" href="#resultats">Voir les résultats</a>
+          <a class="btn btn-ghost" href="#contact">Me contacter</a>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ===================== LE PROJET ===================== -->
+    <section class="section" id="projet">
+      <div class="wrap two-col">
+        <div>
+          <h2>La quête</h2>
+        </div>
+        <div class="stack">
+          <!-- À MODIFIER : raconte ton projet avec tes mots -->
+          <p class="big">
+            SWTCH est un projet personnel, né d'une envie têtue : bâtir, marche après marche,
+            un système de trading qui tienne dans la durée. Pas un raccourci. Un chemin.
+          </p>
+          <p>
+            Chaque règle est écrite, testée, puis confrontée au marché. Ce qui ne tient pas est retiré.
+            Ce qui tient reste, et se montre.
+          </p>
+
+          <!-- À MODIFIER : adapte les lignes à ton projet -->
+          <dl class="facts">
+            <div><dt>Marchés</dt><dd>Or, forex (à adapter)</dd></div>
+            <div><dt>Plateforme</dt><dd>MetaTrader</dd></div>
+            <div><dt>Style</dt><dd>Algorithmique, entièrement automatisé</dd></div>
+            <div><dt>Statut</dt><dd>En réel depuis XX/XXXX</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FONCTIONNEMENT ===================== -->
+    <section class="section section-alt" id="fonctionnement">
+      <div class="wrap">
+        <h2>Comment ça marche</h2>
+        <p class="section-intro">Quatre marches, toujours dans le même ordre, à chaque trade.</p>
+
+        <!-- Les numéros ont un sens : c'est une vraie suite d'étapes -->
+        <ol class="steps">
+          <li>
+            <span class="step-n">1</span>
+            <h3>Observer</h3>
+            <p>Le robot lit les prix en continu et cherche les situations prévues par la stratégie.</p>
+          </li>
+          <li>
+            <span class="step-n">2</span>
+            <h3>Décider</h3>
+            <p>Quand les conditions sont réunies, il ouvre une position. Sinon, il attend.</p>
+          </li>
+          <li>
+            <span class="step-n">3</span>
+            <h3>Se protéger</h3>
+            <p>Taille de position, protections et limites de perte s'appliquent à chaque trade.</p>
+          </li>
+          <li>
+            <span class="step-n">4</span>
+            <h3>Montrer</h3>
+            <p>Chaque trade est enregistré et publié sur Myfxbook, sans modification possible.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===================== RÉSULTATS ===================== -->
+    <section class="section" id="resultats">
+      <div class="wrap">
+        <h2>Résultats</h2>
+        <p class="section-intro">
+          Les chiffres ci-dessous viennent d'un compte suivi par Myfxbook, qui vérifie
+          les données directement auprès du broker.
+        </p>
+
+        <!-- ÉTAPE 3 : remplace les XX par tes vrais chiffres (copie-les depuis Myfxbook) -->
+        <div class="stats">
+          <div class="stat">
+            <span class="stat-value">+XX&nbsp;%</span>
+            <span class="stat-label">Gain total</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value">XX&nbsp;%</span>
+            <span class="stat-label">Drawdown maximum</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value">X,XX</span>
+            <span class="stat-label">Profit factor</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value">XXX</span>
+            <span class="stat-label">Trades réalisés</span>
+          </div>
+        </div>
+
+        <!-- ÉTAPE 4 : widgets Myfxbook.
+             Remplace chaque <div class="widget-empty">...</div> par le code fourni par Myfxbook
+             (une balise <iframe> ou <img>). Le cadre et le titre ne bougent pas. -->
+        <div class="widgets">
+          <div class="widget">
+            <h3>Courbe de croissance</h3>
+            <div class="widget-body">
+              <div class="widget-empty">Colle ici le code du widget « croissance » de Myfxbook.</div>
+            </div>
+          </div>
+          <div class="widget">
+            <h3>Statistiques détaillées</h3>
+            <div class="widget-body">
+              <div class="widget-empty">Colle ici le code du widget « statistiques » de Myfxbook.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- À MODIFIER : le lien vers ton profil Myfxbook public -->
+        <p class="verify">
+          <a class="btn btn-ghost" href="https://www.myfxbook.com/" target="_blank" rel="noopener">
+            Voir la vérification complète sur Myfxbook
+          </a>
+        </p>
+
+        <p class="risk">
+          Les performances passées ne préjugent pas des performances futures. Le trading comporte un risque
+          de perte en capital. Cette page présente un projet personnel et ne constitue pas un conseil en investissement.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===================== LA PROMESSE ===================== -->
+    <section class="section promise" id="promesse">
+      <div class="wrap promise-inner">
+        <h2>Je ne promets aucun gain.</h2>
+        <p>
+          Je promets de rester lisible : des chiffres vérifiés par un tiers, des risques annoncés
+          et aucun trade caché. Le reste, c'est le chemin qui le dira.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section class="section section-alt" id="contact">
+      <div class="wrap two-col">
+        <div>
+          <h2>Faire un bout de chemin ensemble ?</h2>
+          <p class="section-intro">Une question, une idée, une critique : écris-moi, je réponds généralement sous quelques jours.</p>
+        </div>
+        <div class="stack">
+          <!-- ÉTAPE 5 : remplace par tes vraies coordonnées, supprime les lignes inutiles -->
+          <ul class="contacts">
+            <li>
+              <span>E-mail</span>
+              <a href="mailto:ton.email@exemple.com">ton.email@exemple.com</a>
+            </li>
+            <li>
+              <span>LinkedIn</span>
+              <a href="https://www.linkedin.com/" target="_blank" rel="noopener">linkedin.com/in/ton-profil</a>
+            </li>
+            <li>
+              <span>Telegram</span>
+              <a href="https://t.me/" target="_blank" rel="noopener">t.me/ton_pseudo</a>
+            </li>
+          </ul>
+          <p>
+            <a class="btn btn-primary" href="mailto:ton.email@exemple.com">Envoyer un e-mail</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <span>© <span id="annee">2026</span> SWTCH. Du love et des lovés.</span>
+      <a href="#">Haut de page</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
